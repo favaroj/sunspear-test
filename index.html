@@ -29,42 +29,48 @@
         <!--Theme Responsive css-->
         <link rel="stylesheet" href="assets/css/responsive.css" />
 
-        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
 
-        
+       
 	</head>
 
      <body>
-            <!--<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-faded" style="background-color: #ffffff;">
+            <nav id="nav" class="navbar sticky-top navbar-expand-lg navbar-light bg-faded" style="background-color: #ffffff;">
                     
-                    </div>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01"
+                    
+                    <button class="navbar-toggler navbar-toggler-center" type="button" data-toggle="collapse" data-target="#navbarDiv" aria-controls="navbarDiv"
                       style="margin-top: 15px;" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarColor01">
-                      <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                          <a class="nav-link" id="nav-style" href="#">Home
+                    <div class="collapse navbar-collapse" id="navbarDiv">
+                      <ul id="nav-ul" class="navbar-nav mr-auto">
+                        <!--<li class="nav-item active">
+                          <a class="nav-link" id="nav-style" href="#home">Home
                             <span class="sr-only">(current)</span>
                           </a>
+                        </li>-->
+                        <li class="nav-item">
+                          <a class="nav-link anchor" id="nav-style" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" id="nav-style" href="#services">Services</a>
+                          <a class="nav-link anchor" id="nav-style" href="#immortal">IMMORTAL</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" id="nav-style" href="#pricing">Pricing</a>
+                          <a class="nav-link anchor" id="nav-style" href="assets/pages/team.html#home">Team</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" id="nav-style" href="#about">About</a>
+                          <a class="nav-link" id="nav-style" href="#live">Live</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" id="nav-style" href="#contact">Contact</a>
+                            <a class="nav-link" id="nav-style" href="#assets/pages/team.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link anchor" id="nav-style" href="#contact">Contact</a>
                         </li>
                       </ul>
                     </div>
-                  </nav>-->
-		<section>
+                  </nav>
+		<!--<section>
 			<div class="nav">
 				<a class="cd-menu-trigger" href="#main-nav"><span></span></a>
 				<ul class="nav-ul">
@@ -90,7 +96,7 @@
 				</ul>
 				<a href="#0" class="cd-close-menu">Close<span></span></a>
 			</nav>
-		</section> 
+		</section> -->
         
         <section>
 			<div class="banner-container">
@@ -147,7 +153,7 @@
             </div> <!-- /container -->       
         </section>
 		
-		<div id="home" class="home anti-shadow home-main-content parallax-window" data-parallax="scroll" data-image-src="assets/img/splash-rootwitch.jpg" data-z-index="2">
+		<div id="immortal" class="home anti-shadow home-main-content parallax-window" data-parallax="scroll" data-image-src="assets/img/splash-rootwitch.jpg" data-z-index="2">
             <div class="anti-shadow">
                 <div class="sections top">
                     <div class="container text-center top">
@@ -390,6 +396,7 @@
 
         <!--Footer-->
         <footer id="footer" class="footer">
+                <canvas id="canvas">Canvas is not supported in your browser.</canvas>
             <div class="container text-center">
                 <div class="row">
                     <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
@@ -402,6 +409,7 @@
                             </div>
 
                             <p>Producing engines for good. All rights reserved.</p>
+                            <!-- setup our canvas element -->
 
                         </div>
                     </div>
@@ -427,7 +435,15 @@
         <script src="assets/js/plugins.js"></script>
         <script src="assets/js/jquery.magnific-popup.js"></script>
         <script src="assets/js/modernizr.js"></script>
+        <script src="assets/js/zenscroll-min.js"></script>
+        <!--<script src="assets/js/smooth-scroll.js"></script>-->
+        <!--<script src="assets/js/jquery.anchor.js"></script>
 
+        <script>
+                $(document).ready(function() {
+                    $("a.anchor").anchorAnimate({offset:50})
+                });
+            </script>-->
         <script src="assets/js/main.js"></script>
     </body>
 </html>

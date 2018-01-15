@@ -18,9 +18,14 @@ body {
     margin-right: 0;
     font-family: 'robotoregular';
     font-weight: 300;
+    /*scroll-behavior: smooth;*/
 }
 ul {
     margin: 0;
+}
+
+#home, #immortal, #live, #contact {
+    /*scroll-behavior: smooth;*/
 }
 
 /* Banner */
@@ -40,7 +45,69 @@ ul {
     background-repeat: no-repeat;
 }
 
+#canvas {
+    height: 100px;
+    width: 100%;
+}
 /* Nav Bar Before Resize */
+
+/* New Add For Bootstrap Navbar 1/14/2018 */
+#nav {
+    /*position:fixed;
+	z-index:900;
+    width: 100%;*/
+    background-color: white;
+    box-shadow: 0 4px 2px -2px lightgray;
+    display: block;
+}
+
+#nav-ul {
+    /*width: 43%;*/
+    /*float: right;*/
+    /*border-bottom: 1px solid #dfdbec;*/
+    padding: auto 0;
+}
+#nav-ul > li {
+    cursor: pointer;
+    color: #FFF;
+	font-size:17px;
+    display: inline-block;
+    /*border-bottom: 1px solid #dfdbec;*/
+}
+
+
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+    #nav-style {
+        border-bottom: 1px solid #dfdbec;
+        height: 90px;
+    }
+}
+
+#nav-ul > li a {
+	display: block;
+    color: black;
+    text-align: center;
+    padding: 18px;
+    text-decoration: none;
+    /*height: 90px;*/
+
+}
+
+#nav-ul > li a:hover {
+    color:red;
+}
+
+.pull-right .dropdown-menu:after {
+    left: auto;
+    right: 13px;
+}
+.pull-right .dropdown-menu {
+    left: auto;
+    right: 0;
+}
+/* End Bootstrap Navbar */
 
 .nav {
 	position:fixed;
@@ -269,7 +336,7 @@ Section
 }
 
 .sectionsContact {
-    padding: 300px 0 100px 0;
+    padding: 75px 0 100px 0;
     position: relative;
     overflow: hidden;
 }
@@ -300,7 +367,7 @@ Section
 }
 
 .footer {
-    padding-top:50px;
+    padding-top:25px;
     padding-bottom:50px;
     color:#fff;
     background:#222222;
