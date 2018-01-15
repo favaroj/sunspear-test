@@ -68,7 +68,7 @@ jQuery(document).ready(function ($) {
                 $window_width = $(window).width();
         $('.cd-blurred-bg').css('clip', 'rect(' + $header_top + 'px, ' + $window_width + 'px, ' + $window_height + 'px, 0px)');
     }
-    $('#main-nav a[href^="#"]').on('click', function (event) {
+    /*$('#main-nav a[href^="#"]').on('click', function (event) {
         event.preventDefault();
         var target = $(this.hash);
         $('.home-main-content').removeClass('move-out');
@@ -78,7 +78,7 @@ jQuery(document).ready(function ($) {
                 {'scrollTop': target.offset().top},
         900
                 );
-    });
+    });*/
 
 
     /*---------------------------------------------*
