@@ -131,7 +131,7 @@
 
 
 
-
+/* CURRENT Works better with mobile 1/15/18 */
 $(document).ready(function() {
     // Add smooth scrolling to all links
     $('a[href^="#"]').on('click', function(event) {
