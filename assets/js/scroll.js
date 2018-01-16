@@ -119,7 +119,7 @@
           // offset code to 0 on mobile
           $('html, body').stop().animate({
           
-            'scrollTop': $target.offset().top}, 2000, function () {
+            'scrollTop': $target.offset().top}, 900, function () {
             window.location.hash = target;
            
         });
