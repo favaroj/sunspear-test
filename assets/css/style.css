@@ -1043,6 +1043,9 @@ Main components
     h1.top {
         font-size: 400%;
     }
+    h5.bones {
+        font-size: 22px;
+    }
     #nav-ul > li a {
         padding: 30px;
         text-decoration: none;
