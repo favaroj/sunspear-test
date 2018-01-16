@@ -58,7 +58,7 @@ ul {
     width: 100%;*/
     background-color: white;
     box-shadow: 0 4px 2px -2px lightgray;
-    display: block;
+    /*display: block;*/
 }
 
 #nav-ul {
