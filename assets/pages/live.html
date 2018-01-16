@@ -39,12 +39,47 @@
         <!-- ***** Added Smooth Scroll Anchor *****
             I put these into seperate files instead of main.js so that you could 
             easily locate the logic and learn if you want to -->
-        <script src="../js/scroll.js"></script>
+		<script src="../js/scroll.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
 	</head>
 
-    <body class="">
-		<section>
-			<div class="nav">
+    <body >
+			<nav id="nav" class="navbar sticky-top navbar-expand-lg navbar-light bg-faded" style="background-color: #ffffff;">
+                    
+                    
+					<button class="navbar-toggler navbar-toggler-center" type="button" data-toggle="collapse" data-target="#navbarDiv" aria-controls="navbarDiv"
+					  style="margin-top: 10px;
+					  margin-right: 10px;
+					  margin-left: 79%;
+					  margin-bottom: 10px;" aria-expanded="false" aria-label="Toggle navigation">
+					  <span style="width: 50px; height: 50px;" class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarDiv">
+					  <ul id="nav-ul" class="navbar-nav ">
+						<li class="nav-item active">
+						  <a class="nav-link" id="nav-style" href="../../index.html">Home
+							<span class="sr-only">(current)</span>
+						  </a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link anchor" id="nav-style" href="../../index.html#immortal">IMMORTAL</a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link anchor" id="nav-style" href="../pages/team.html#home">Team</a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link" id="nav-style" href="#home">Live</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="nav-style" href="../pages/team.html#blog">Blog</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link anchor" id="nav-style" href="../pages/team.html#about">About</a>
+						</li>
+					  </ul>
+					</div>
+				  </nav>
+			<!--<div class="nav">
 				<a class="cd-menu-trigger" href="#main-nav"><span></span></a>
 				<ul class="nav-ul">
 						
@@ -69,16 +104,16 @@
 				</ul>
 				<a href="#0" class="cd-close-menu">Close<span></span></a>
 			</nav>
-		</section>
+		</section>-->
         
         <section>
 			<div class="banner-container whiteback">
 				<div class="banner"></div>
 			</div>
         </section>
-
-        <section id="about" class="sections3; padding-top:0px;">
-            <div class="container" style="width:100%">
+		<div id="home" style="margin-bottom: 40px;"></div>
+        <section   class="sections3; padding-top:0px;">
+            <div  class="container" style="width:100%">
                 <!-- Example row of columns -->
 				<div class="stream-wrapper">
 					
@@ -153,6 +188,7 @@
 
              <!--Footer-->
         <footer id="footer" class="footer">
+				<canvas id="canvas">Canvas is not supported in your browser.</canvas>
             <div class="container text-center">
                 <div class="row">
                     <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
