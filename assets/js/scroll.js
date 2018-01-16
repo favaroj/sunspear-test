@@ -94,7 +94,8 @@
 
     
 
-    $('a[href^="#"]').on('click', function (e) {
+    /* GOOD ONE 1/15/18 */
+    /*$('a[href^="#"]').on('click', function (e) {
         e.preventDefault();
        
     
@@ -125,13 +126,13 @@
         });
       } 
         
-    });
+    });*/
 
 
 
 
 
-/*$(document).ready(function() {
+$(document).ready(function() {
     // Add smooth scrolling to all links
     $('a[href^="#"]').on('click', function(event) {
     if (this.hash !== "") {
@@ -145,4 +146,4 @@
         });
       } 
     });
-  });*/
+  });
