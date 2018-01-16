@@ -106,11 +106,25 @@
         var target = this.hash,
             menu = target;
         $target = $(target);
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top}, 2000, function () {
+
+        if( window.innerWidth > 801 ){
+          // offset code to 53 on not mobile
+          $('html, body').stop().animate({
+          
+            'scrollTop': $target.offset().top}, 2800, function () {
             window.location.hash = target;
            
         });
+      }else{
+          // offset code to 0 on mobile
+          $('html, body').stop().animate({
+          
+            'scrollTop': $target.offset().top}, 900, function () {
+            window.location.hash = target;
+           
+        });
+      } 
+        
     });
 
 
