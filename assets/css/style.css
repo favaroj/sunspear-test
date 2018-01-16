@@ -52,13 +52,21 @@ ul {
 /* Nav Bar Before Resize */
 
 /* New Add For Bootstrap Navbar 1/14/2018 */
-#nav {
+#nav.is-visible {
     /*position:fixed;
 	z-index:900;
     width: 100%;*/
     background-color: white;
     box-shadow: 0 4px 2px -2px lightgray;
     /*display: block;*/
+    
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        transform: translateY(0);
+    }
 }
 
 #nav-ul {

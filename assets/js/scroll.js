@@ -79,25 +79,25 @@
   });*/
 
 
- /*$('#main-nav a[href^="#"]').on('click', function (event) {
+ $('#nav a[href^="#"]').on('click', function (event) {
         event.preventDefault();
         var target = $(this.hash);
         $('.home-main-content').removeClass('move-out');
-        $('#main-nav').removeClass('is-visible');
+        $('#nav').removeClass('is-visible');
         $('.cd-shadow-layer').removeClass('is-visible');
         $('body,html').animate(
                 {'scrollTop': target.offset().top},
-        900
+        1500
                 );
-    });*/
+    });
 
 
 
 
 
-$(document).ready(function() {
+/*$(document).ready(function() {
     // Add smooth scrolling to all links
-    $("a").on('click', function(event) {
+    $('a[href^="#"]').on('click', function(event) {
     if (this.hash !== "") {
         var hash = this.hash;
         event.preventDefault();
@@ -109,4 +109,4 @@ $(document).ready(function() {
         });
       } 
     });
-  });
+  });*/
