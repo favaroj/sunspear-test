@@ -52,7 +52,7 @@ ul {
 /* Nav Bar Before Resize */
 
 /* New Add For Bootstrap Navbar 1/14/2018 */
-#nav.is-visible {
+#nav {
     /*position:fixed;
 	z-index:900;
     width: 100%;*/
@@ -66,7 +66,7 @@ ul {
         -ms-transform: translateY(0);
         -o-transform: translateY(0);
         transform: translateY(0);
-    }
+    
 }
 
 #nav-ul {
@@ -90,6 +90,11 @@ ul {
     #nav-style {
         border-bottom: 1px solid #dfdbec;
         height: 90px;
+    }
+    #nav-ul > li a {
+        padding: 40px;
+        text-decoration: none;
+        height: 100%;
     }
 }
 
@@ -1024,6 +1029,18 @@ Main components
     display: none;
 } 
 
+@media (max-width: 767px) {
+
+    h2.top {
+        font-size: 250%;
+    }
+    #nav-ul > li a {
+        padding: 40px;
+        text-decoration: none;
+        height: 100%;
+    }
+}
+
 @media only screen and (min-width: 768px) {
     .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
         margin-left: 0;
@@ -1033,6 +1050,7 @@ Main components
     .cd-header {
         height: 80px;
     }
+    
 }
 
 #cd-logo {
