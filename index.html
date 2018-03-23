@@ -29,12 +29,58 @@
         <!--Theme Responsive css-->
         <link rel="stylesheet" href="assets/css/responsive.css" />
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">-->
 
-       
+        <!-- FOR FIXED-NAV 3/4/18 -->
+        <!--<link rel="stylesheet" href="assets/css/styles.css">
+        <script src="assets/js/responsive-nav.js"></script>-->
 	</head>
 
      <body>
+            <!--<nav class="navbar navbar-inverse navbar-fixed-top">
+                    <div class="navbar-header">
+                      <a href="#home" data-scroll><img id="navbar-logo" src="assets/img/logo.png" /></a>
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                    </div>
+                    <div style="text-align: center;" class="navbar-collapse collapse">
+                      <ul class="nav navbar-nav">
+                        <li><a class="link" id="nav-font" href="#home" data-scroll>Home</a></li>
+                        <li><a class="link" id="nav-font" href="#immortal" data-scroll>IMMORTAL</a></li>
+                        <li><a class="link" id="nav-font" style="" href="#contact" data-scroll>Contact</a></li>
+                      </ul>
+                      
+                    </div>
+                  </nav>-->
+            <!-- FIXED-NAVBAR 3/4/18 -->
+            <!--<header>
+                    <a href="#home" class="logo" data-scroll>Fixed Nav</a>
+                    <nav class="nav-collapse">
+                      <ul>
+                        <li class="menu-item active"><a href="#home" data-scroll>Home</a></li>
+                        <li class="menu-item"><a href="#immortal" data-scroll>IMMORTAL</a></li>
+                        <li class="menu-item"><a href="assets/pages/team.html#home" data-scroll>Team</a></li>
+                        <li class="menu-item"><a href="#blog" data-scroll>Blog</a></li>
+                        <li class="menu-item"><a href="http://www.google.com" target="_blank">Google</a></li>
+                      </ul>
+                    </nav>
+                  </header>-->
+
+
+            <!-- EXPERIMENTAL NAVBAR -->
+            <!--<div class="topnav" id="myTopnav">
+                    <a href="#home" class="active">Home</a>
+                    <a href="#immortal">IMMORTAL</a>
+                    <a href="assets/pages/team.html#home">Team</a>
+                    <a href="assets/pages/live.html">Live</a>
+                    <a href="#assets/pages/team.html">Blog</a>
+                    <a href="#contact">Contact</a>
+                    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>-->
+
             <!--GOOD NAV-->
             <!--ISSUE: COLLAPSE ON WINDOW SHRINK-->
             <!--<nav id="nav" class="navbar sticky-top navbar-expand-lg navbar-light bg-faded" style="background-color: #ffffff;">
@@ -102,13 +148,13 @@
                     </section>-->
         
         <section>
-			<div class="banner-container">
+			<div id="home" class="banner-container">
 				<div class="banner"></div>
 			</div>
         </section>
 		<div class='preloader'><div class='loaded'>&nbsp;</div></div>
         <!--Home page style-->
-        <header id="home" class="home anti-shadow home-main-content parallax-window" data-parallax="scroll" data-image-src="assets/img/header-bg.jpg" data-z-index="2">
+        <header  class="home anti-shadow home-main-content parallax-window" data-parallax="scroll" data-image-src="assets/img/header-bg.jpg" data-z-index="2">
             <div class="anti-shadow">
                 <div class="sections top">
                     <div class="container text-center top">
@@ -216,7 +262,7 @@
                                 <h3></h3>
                                 <p>Welcome to IMMORTAL, a competitive multiplayer experience where legendary heroes lead their people to victory on the battlefield. To win, players must forge alliances, build  armies, and seize territory in exciting PvP and PvE scenarios.</p>
                                 <ul class="txt-ul">
-								  <li class="txt-li"><strong>Play your Way:</strong> Descend from the sky with angelic legions, sweep across the land with alien hordes, or take to the field with magi-tech desparados. With over seven civilizations and dozens of commanders, players choose and customize their playstyle.</li>								
+								  <li class="txt-li"><strong>Play your Way:</strong> Descend from the sky with angelic legions, sweep across the land with alien hordes, or take to the field with magi-tech desperados. With over seven civilizations and dozens of commanders, players choose and customize their playstyle.</li>								
 								  <li class="txt-li"><strong>Rally your Allies:</strong> Bring your friends to the battlefield with exciting team gameplay.</li>
 								  <li class="txt-li"><strong>Command your Army:</strong> Innovative controls and UI features put the power in your hands.</li>
 								  <li class="txt-li"><strong>Sieze your Victory:</strong> Reward yourself and your allies with the spoils of war. Create and customize armor and relics that display your power.</li>
@@ -335,8 +381,8 @@
                             <div class="col-md-6 col-sm-6 col-xs-12">
                                 <div class="contact-details-area">
 								
-									<div class="contact-details">
-										<img src="assets/img/portraits/ian2.png" style="padding:20px; margin-left:4%;">
+									<div id="contact-details-container" class="contact-details">
+										<img src="assets/img/portraits/ian2.png" id="contact-details-img" >
                                         <h4>Ian Hunt</h4>
 										<h6>CEO</h6>
                                         <p>PHONE: +1 805 284 4197</p>
@@ -349,8 +395,8 @@
 							<div class="col-md-6 col-sm-6 col-xs-12">
                                 <div class="contact-details-area">
 								
-									<div class="contact-details">
-										<img src="assets/img/portraits/dylan.png" style="padding:20px; margin-left:4%;" >
+									<div id="contact-details-container" class="contact-details">
+										<img src="assets/img/portraits/dylan.png" id="contact-details-img" >
                                         <h4>Dylan Kahn</h4>
 										<h6>Business Development</h6>
                                         <p>PHONE: +1 406 465 3449</p>
@@ -412,6 +458,7 @@
                             </div>
 
                             <p>Producing engines for good. All rights reserved.</p>
+                            &copy; 2018
                             <!-- setup our canvas element -->
 
                         </div>
@@ -420,6 +467,22 @@
             </div>
 
         </footer>
+
+        <!-- FOR FIXED-NAV 3/4/18 -->
+        <script src="assets/js/fastclick.js"></script>
+        <script src="assets/js/scroll.js"></script>
+        <script src="assets/js/fixed-responsive-nav.js"></script>
+
+        <script>
+                function myFunction() {
+                    var x = document.getElementById("myTopnav");
+                    if (x.className === "topnav") {
+                        x.className += " responsive";
+                    } else {
+                        x.className = "topnav";
+                    }
+                }
+        </script>
 
         <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         <!-- ***** Added Parallax
@@ -431,7 +494,7 @@
         <!-- ***** Added Smooth Scroll Anchor *****
             I put these into seperate files instead of main.js so that you could 
             easily locate the logic and learn if you want to -->
-        <script src="assets/js/scroll.js"></script>
+        
         <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
         <script src="assets/js/vendor/bootstrap.min.js"></script>
 
